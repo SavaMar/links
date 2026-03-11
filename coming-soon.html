@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;700&display=swap");
+
+      :root {
+        --bg: #0e0d0c;
+        --accent: #e8321a;
+        --text: #f5f0eb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        background: radial-gradient(circle at top, #25110d 0%, var(--bg) 45%);
+        color: var(--text);
+        font-family: "Syne", sans-serif;
+      }
+
+      .card {
+        width: min(92vw, 560px);
+        border: 1px solid rgb(245 240 235 / 12%);
+        border-radius: 20px;
+        padding: 34px 24px 28px;
+        text-align: center;
+        background: rgb(14 13 12 / 80%);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        color: var(--accent);
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2.2rem, 8vw, 3.4rem);
+        letter-spacing: 0.03em;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      .topic {
+        margin: 16px 0 6px;
+        font-weight: 700;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 24px;
+        text-decoration: none;
+        background: var(--accent);
+        color: var(--text);
+        border-radius: 12px;
+        padding: 11px 22px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Coming Soon</h1>
+      <p>This page is in process of building and will be available soon.</p>
+      <p class="topic" id="topic-text"></p>
+      <a class="back-link" href="/" id="back-link">Go back</a>
+    </main>
+
+    <script>
+      const topicMap = {
+        "physical-businesses": "Physical Businesses",
+        "personal-brand": "Personal Brand",
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const topicKey = params.get("topic");
+      const topicTextEl = document.getElementById("topic-text");
+      const topicText = topicMap[topicKey];
+
+      if (topicText) {
+        topicTextEl.textContent = `Section: ${topicText}`;
+      }
+
+      const backLink = document.getElementById("back-link");
+      backLink.addEventListener("click", (event) => {
+        if (window.history.length > 1) {
+          event.preventDefault();
+          window.history.back();
+        }
+      });
+    </script>
+  </body>
+</html>
