@@ -8,3 +8,4 @@
 .env.test
 .env.production
 node_modules
+.vercel

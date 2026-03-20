@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books | Mari Miavka</title>
+    <script type="module" crossorigin src="/assets/books-DG4Ul_Mq.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/assets/books-Eritg6ze.css">
+  </head>
+  <body>
+    <main class="books-page">
+      <header class="books-header">
+        <a class="back-link" href="/">← Back to Home</a>
+        <h1 class="name">Books I've read</h1>
+        <p>
+          A collection of books that influenced me. Use search or hashtag filters
+          to find by topic.
+        </p>
+      </header>
+
+      <section class="books-controls" aria-label="Book filters">
+        <label class="search-wrap">
+          <span class="visually-hidden">Search books</span>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search title, author, or hashtag..."
+            autocomplete="off"
+          />
+        </label>
+        <label class="score-filter-wrap">
+          <span class="visually-hidden">Filter by score</span>
+          <select id="score-filter" class="score-filter" aria-label="Filter by score">
+            <option value="all">All</option>
+            <option value="lifechanging">Lifechanging</option>
+            <option value="top-pick">Top pics</option>
+          </select>
+        </label>
+        <button id="clear-filters" class="clear-btn" type="button">Clear</button>
+      </section>
+
+      <section class="tag-tools" aria-label="Topic hashtags controls">
+        <p class="tag-title">Popular hashtags</p>
+        <button id="toggle-tags" class="toggle-tags-btn" type="button">
+          Show all tags
+        </button>
+      </section>
+      <section id="tag-list" class="tag-list" aria-label="Topic hashtags"></section>
+      <section id="books-grid" class="books-grid" aria-live="polite"></section>
+      <p id="empty-state" class="empty-state" hidden>No books match your filters.</p>
+    </main>
+
+    <div id="book-modal" class="modal" hidden>
+      <div class="modal-backdrop" data-close></div>
+      <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-close aria-label="Close details">
+          ×
+        </button>
+        <h2 id="modal-title"></h2>
+        <div class="modal-subline">
+          <p class="modal-author"></p>
+          <p class="modal-score" hidden></p>
+        </div>
+        <section>
+          <h3>Description</h3>
+          <p class="modal-description"></p>
+        </section>
+        <section>
+          <h3>Tags</h3>
+          <div class="modal-tags"></div>
+        </section>
+        <section>
+          <h3>Quotes</h3>
+          <ul class="modal-quotes"></ul>
+        </section>
+      </article>
+    </div>
+
+  </body>
+</html>
