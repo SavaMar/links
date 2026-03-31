@@ -819,14 +819,14 @@ export const books = [
       "chaos theory",
       "mathematics",
       "physics",
-      "history of science"
+      "history of science",
     ],
     "my-score": "lifechanging",
     translation: ["en"],
     quotes: [
       "Simple systems, with only a few elements, can nonetheless produce complex behavior.",
       "Chaos is a science of the global nature of systems.",
-      "Sensitive dependence on initial conditions is the hallmark of chaos."
+      "Sensitive dependence on initial conditions is the hallmark of chaos.",
     ],
   },
   {
@@ -841,14 +841,14 @@ export const books = [
       "business",
       "sales",
       "lead generation",
-      "entrepreneurship"
+      "entrepreneurship",
     ],
     "my-score": "lifechanging",
     translation: ["en"],
     quotes: [
       "If you can’t get leads, you don’t have a business.",
       "The only way to win is to attract attention, and then convert it.",
-      "Marketing done right makes sales unnecessary."
+      "Marketing done right makes sales unnecessary.",
     ],
   },
   {
@@ -863,14 +863,14 @@ export const books = [
       "persuasion",
       "behavior",
       "business",
-      "communication"
+      "communication",
     ],
     "my-score": "lifechanging",
     translation: ["en"],
     quotes: [
       "The best defense against manipulation is understanding how it works.",
       "People say yes for their reasons, not yours.",
-      "We all fall for the shortcuts—be aware of them!"
+      "We all fall for the shortcuts—be aware of them!",
     ],
   },
   {
@@ -884,14 +884,14 @@ export const books = [
       "psychology",
       "self-esteem",
       "personal development",
-      "mental health"
+      "mental health",
     ],
     "my-score": "lifechanging",
     translation: ["en"],
     quotes: [
       "Self-esteem is the reputation we acquire with ourselves.",
       "The practice of living consciously is the first pillar of self-esteem.",
-      "No one is coming to save you–you’re responsible for your life."
+      "No one is coming to save you–you’re responsible for your life.",
     ],
   },
   {
@@ -901,40 +901,95 @@ export const books = [
     cover: "https://filedn.com/lPmOLyYLDG0bQGSveFAL3WB/Books/en-54.jpg",
     description:
       "A guide to uncovering the roots of self-sabotage and overcoming them. Brianna Wiest shows how your greatest obstacle is often yourself – and how to turn that mountain into a path for growth.",
-    hashtags: [
-      "self-help",
-      "personal growth",
-      "psychology",
-      "self-mastery"
-    ],
+    hashtags: ["self-help", "personal growth", "psychology", "self-mastery"],
     "my-score": 4,
     translation: ["en"],
     quotes: [
       "The mountain you are facing is you.",
       "Growth is often a process of unbecoming.",
-      "Your new life will cost you your old one."
+      "Your new life will cost you your old one.",
     ],
   },
   {
     id: 55,
-    title: "The Myth of Normal: Trauma, Illness, and Healing in a Toxic Culture",
+    title:
+      "The Myth of Normal: Trauma, Illness, and Healing in a Toxic Culture",
     author: "Gabor Maté",
     cover: "https://filedn.com/lPmOLyYLDG0bQGSveFAL3WB/Books/en-55.jpg",
     description:
       "Gabor Maté examines how modern society breeds illness and trauma, and how true healing comes from understanding and accepting our experiences. A call to question what we accept as 'normal' in a world that can be deeply unhealthy.",
-    hashtags: [
-      "psychology",
-      "trauma",
-      "society",
-      "healing",
-      "health"
-    ],
+    hashtags: ["psychology", "trauma", "society", "healing", "health"],
     "my-score": "lifechanging",
     translation: ["en"],
     quotes: [
       "Illness is not a cruel twist of fate, but a manifestation of an unhealed life.",
       "In our culture, abnormality has become the norm.",
-      "Healing begins with acceptance, not avoidance."
+      "Healing begins with acceptance, not avoidance.",
+    ],
+  },
+  {
+    id: 56,
+    title:
+      "Building a StoryBrand 2.0: Clarify Your Message So Customers Will Listen",
+    author: "Donald Miller",
+    cover: "https://filedn.com/lPmOLyYLDG0bQGSveFAL3WB/Books/en-56.jpg",
+    description:
+      "A powerful framework for companies to clarify their messaging so customers notice, understand, and engage. Donald Miller’s updated guide focuses on impactful communication for business success.",
+    hashtags: ["marketing", "business", "communication", "branding"],
+    "my-score": 5,
+    translation: ["en"],
+    quotes: [
+      "If you confuse, you'll lose.",
+      "Customers buy products only after they read words that make them want to buy those products.",
+      "People want to be taken somewhere.",
+    ],
+  },
+  {
+    id: 57,
+    title: "Nonviolent Communication",
+    author: "Marshall B. Rosenberg",
+    cover: "https://filedn.com/lPmOLyYLDG0bQGSveFAL3WB/Books/en-57.jpg",
+    description:
+      "Marshall Rosenberg’s essential guide to improving relationships and resolving conflicts peacefully. Teaches empathetic communication skills for compassionate and authentic connections.",
+    hashtags: ["communication", "relationships", "self-help", "empathy"],
+    "my-score": "lifechanging",
+    translation: ["en"],
+    quotes: [
+      "What I want in my life is compassion, a flow between myself and others based on a mutual giving from the heart.",
+      "Violence comes from the belief that other people cause our pain and therefore deserve punishment.",
+      "Empathy gives you the ability to enjoy another person’s pain.",
+    ],
+  },
+  {
+    id: 58,
+    title: "Range",
+    author: "David Epstein",
+    cover: "https://filedn.com/lPmOLyYLDG0bQGSveFAL3WB/Books/en-58.jpg",
+    description:
+      "David Epstein explores how generalists, not specialists, are primed to excel in a complex world. A compelling argument for cultivating broad experience and adaptability.",
+    hashtags: ["psychology", "career", "success", "adaptability"],
+    "my-score": "lifechanging",
+    translation: ["en"],
+    quotes: [
+      "The most successful people cultivate range.",
+      "Specialization can be limiting in a complicated world.",
+      "Premature optimization is the root of all evil.",
+    ],
+  },
+  {
+    id: 59,
+    title: "Never Split the Difference",
+    author: "Chris Voss",
+    cover: "https://filedn.com/lPmOLyYLDG0bQGSveFAL3WB/Books/en-59.jpg",
+    description:
+      "Former FBI negotiator Chris Voss reveals negotiation techniques for business and everyday life. Shows why you should never accept compromise and how to get what you want through empathy and tactical empathy.",
+    hashtags: ["negotiation", "business", "psychology", "communication"],
+    "my-score": "lifechanging",
+    translation: ["en"],
+    quotes: [
+      "He who has learned to disagree without being disagreeable has discovered the most valuable secret of negotiation.",
+      "No deal is better than a bad deal.",
+      "The beauty of empathy is that it doesn't demand that you agree with the other person's ideas.",
     ],
   },
 ];
