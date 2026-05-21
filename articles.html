@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articles — Mari Miavka | Brand Photography & Content Strategy, Switzerland</title>
+<meta name="description" content="Honest writing on personal branding, visual identity, and why less skilled people keep getting the clients you deserve. For established professionals in Switzerland.">
+<meta name="author" content="Mari Miavka">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://miavka.ch/articles.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://miavka.ch/articles.html">
+<meta property="og:title" content="Articles — Mari Miavka">
+<meta property="og:description" content="Honest writing on personal branding, visual identity, and why less skilled people keep getting the clients you deserve.">
+<meta property="og:image" content="https://miavka.ch/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --orange:     #E8321A;
+  --dark:       #0E0D0C;
+  --dark2:      #181614;
+  --dark3:      #211E1B;
+  --warm-white: #F5F0EB;
+  --warm-mid:   #E0D8CE;
+  --text-mid:   #6B6460;
+  --text-light: #9B9390;
+  --ash:        #252220;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Syne',sans-serif; background:var(--dark); color:var(--warm-white); overflow-x:hidden; }
+
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:200;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:28px 56px;
+  transition:background .4s,padding .3s,backdrop-filter .4s;
+}
+nav.scrolled { background:rgba(14,13,12,0.92); backdrop-filter:blur(14px); padding:18px 56px; border-bottom:1px solid rgba(255,255,255,0.04); }
+.logo { font-family:'Bebas Neue',sans-serif; font-size:28px; letter-spacing:4px; color:var(--warm-white); text-decoration:none; }
+.logo span { color:var(--orange); }
+.nav-links { display:flex; gap:40px; align-items:center; }
+.nav-links a {
+  font-size:11px; font-weight:600; letter-spacing:2.5px; text-transform:uppercase;
+  color:var(--text-light); text-decoration:none;
+  position:relative; padding-bottom:4px; transition:color .2s;
+}
+.nav-links a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:1px; background:var(--orange); transition:width .35s ease; }
+.nav-links a:hover { color:var(--warm-white); }
+.nav-links a:hover::after { width:100%; }
+.nav-links a.active { color:var(--orange); }
+.nav-links a.active::after { width:100%; }
+
+.page-hero {
+  padding:160px 56px 80px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.page-eyebrow { font-size:10px; letter-spacing:5px; text-transform:uppercase; color:var(--orange); margin-bottom:20px; display:flex; align-items:center; gap:12px; }
+.page-eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--orange); }
+.page-hero h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(64px,7vw,108px); line-height:.9; color:var(--warm-white); }
+.page-hero h1 span { color:var(--orange); }
+.page-hero p { font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--text-light); margin-top:24px; max-width:560px; line-height:1.65; }
+
+.articles-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; padding:80px 56px 120px; }
+
+.article-card {
+  background:var(--dark2); padding:48px 40px;
+  border-top:2px solid transparent;
+  transition:border-color .3s,background .3s;
+  display:flex; flex-direction:column; gap:20px;
+  text-decoration:none;
+}
+.article-card:hover { border-color:var(--orange); background:var(--dark3); }
+.article-tag { font-size:9px; letter-spacing:4px; text-transform:uppercase; color:var(--orange); }
+.article-title { font-family:'Playfair Display',serif; font-size:clamp(20px,1.8vw,24px); color:var(--warm-white); line-height:1.25; }
+.article-excerpt { font-size:14px; color:var(--text-mid); line-height:1.8; flex:1; }
+.article-read { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--orange); margin-top:auto; padding-top:20px; border-top:1px solid rgba(255,255,255,0.06); }
+
+.btn-primary {
+  background:var(--orange); color:white;
+  padding:15px 38px; font-size:11px; font-weight:600; letter-spacing:2.5px; text-transform:uppercase;
+  border:none; cursor:pointer; position:relative; overflow:hidden; transition:transform .2s,box-shadow .2s;
+  display:inline-block; text-decoration:none;
+}
+.btn-primary:hover { transform:translateY(-2px); box-shadow:0 12px 36px rgba(232,50,26,.3); }
+
+footer { background:var(--dark); padding:60px 56px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgba(255,255,255,.05); }
+.footer-logo { font-family:'Bebas Neue',sans-serif; font-size:28px; color:var(--warm-white); letter-spacing:3px; text-decoration:none; }
+.footer-logo span { color:var(--orange); }
+.footer-links { display:flex; gap:28px; }
+.footer-links a { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--text-mid); text-decoration:none; transition:color .2s; }
+.footer-links a:hover { color:var(--orange); }
+.footer-copy { font-size:12px; color:var(--text-mid); }
+
+@media(max-width:900px){
+  nav { padding:20px 24px; }
+  .page-hero { padding:120px 24px 60px; }
+  .articles-grid { grid-template-columns:1fr; padding:40px 24px 80px; }
+  footer { flex-direction:column; gap:24px; text-align:center; }
+}
+</style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a class="logo" href="physical-businesses.html">MARI<span>.</span></a>
+  <div class="nav-links">
+    <a href="physical-businesses.html">Home</a>
+    <a href="physical-businesses.html#pricing">Packages</a>
+    <a href="articles.html" class="active">Articles</a>
+    <a href="https://cal.com/mari-miavka/business-call" target="_blank" rel="noopener">Book a Call</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <p class="page-eyebrow">Sharp Transparency</p>
+  <h1>WRITING<br>THAT <span>STINGS</span><br>A LITTLE.</h1>
+  <p>On personal branding, visual identity, and the gap between who you are and what people see. For professionals who are ready to hear the truth.</p>
+</section>
+
+<div class="articles-grid">
+  <a class="article-card" href="article-online-presence.html">
+    <p class="article-tag">· Personal Brand · 6 min read ·</p>
+    <h2 class="article-title">You Think You Look Professional Online. Here's What Your Clients Actually See.</h2>
+    <p class="article-excerpt">A potential client just Googled you. Walk through what they found — the outdated headshot, the LinkedIn banner from 2019, the Instagram that says nothing. You think you're showing up fine. You're probably not.</p>
+    <p class="article-read">Read Article →</p>
+  </a>
+  <a class="article-card" href="article-less-skilled-competitors.html">
+    <p class="article-tag">· Visibility · 5 min read ·</p>
+    <h2 class="article-title">Why Less Skilled People Are Getting the Clients You Deserve</h2>
+    <p class="article-excerpt">You've been doing this for 15 years. They've been doing it for 3. They're fully booked. You're not. This isn't about talent. It's about what people see before they decide.</p>
+    <p class="article-read">Read Article →</p>
+  </a>
+  <a class="article-card" href="article-price-image.html">
+    <p class="article-tag">· Pricing & Positioning · 5 min read ·</p>
+    <h2 class="article-title">Your Price Isn't the Problem. Your Image Is.</h2>
+    <p class="article-excerpt">You say your price. Then you immediately explain it. That's the tell. When your visual presence looks average, your price feels high. The number didn't change. The perception did.</p>
+    <p class="article-read">Read Article →</p>
+  </a>
+</div>
+
+<footer>
+  <a class="footer-logo" href="physical-businesses.html">MARI<span>.</span></a>
+  <div class="footer-links">
+    <a href="physical-businesses.html">Home</a>
+    <a href="physical-businesses.html">Packages</a>
+    <a href="articles.html">Articles</a>
+    <a href="https://instagram.com/marisava33" target="_blank">Instagram</a>
+  </div>
+  <p class="footer-copy">© 2026 Mari Miavka</p>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);
+});
+</script>
+</body>
+</html>

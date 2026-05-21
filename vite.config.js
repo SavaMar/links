@@ -7,6 +7,7 @@ export default defineConfig({
         main: "index.html",
         books: "books.html",
         comingSoon: "coming-soon.html",
+        physicalBusinesses: "physical-businesses.html",
       },
     },
   },

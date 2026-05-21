@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mari Miavka — Brand Photographer & Content Strategist | Switzerland</title>
+<meta name="description" content="Brand photographer and content strategist based in Moutier, Switzerland. I close the gap between who you are and how you come across online — for established professionals in Bern, Lausanne, Geneva and beyond.">
+<meta name="keywords" content="brand photographer Switzerland, personal brand photography Bern, content strategist Switzerland, brand photography Lausanne, professional online presence Switzerland, personal branding Switzerland, brand photographer Geneva, visual storyteller Switzerland">
+<meta name="author" content="Mari Miavka">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="CH">
+<meta name="geo.placename" content="Moutier, Switzerland">
+<link rel="canonical" href="https://miavka.ch/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://miavka.ch/">
+<meta property="og:title" content="Mari Miavka — Brand Photographer & Content Strategist">
+<meta property="og:description" content="You're already excellent. The problem is — nobody can tell. I close the gap between who you are and how you come across online.">
+<meta property="og:image" content="https://miavka.ch/og-image.jpg">
+<meta property="og:locale" content="en_CH">
+<meta property="og:site_name" content="Mari Miavka">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mari Miavka — Brand Photographer & Content Strategist">
+<meta name="twitter:description" content="You're already excellent. The problem is — nobody can tell. Brand photography & content strategy, Switzerland.">
+<meta name="twitter:image" content="https://miavka.ch/og-image.jpg">
+
+<!-- Schema.org: Person + LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://miavka.ch/#person",
+      "name": "Mari Miavka",
+      "jobTitle": "Brand Photographer & Content Strategist",
+      "description": "I close the gap between who you are and how you come across online — for established professionals in Switzerland.",
+      "url": "https://miavka.ch/",
+      "sameAs": [
+        "https://instagram.com/marisava33"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Moutier",
+        "addressCountry": "CH"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://miavka.ch/#business",
+      "name": "Mari Miavka — Brand Photography & Content Strategy",
+      "description": "Brand photography and content strategy for established professionals who don't realize how they actually come across online. Based in Moutier, serving all of Switzerland.",
+      "url": "https://miavka.ch/",
+      "telephone": "",
+      "priceRange": "CHF 690–2900",
+      "image": "https://miavka.ch/og-image.jpg",
+      "founder": { "@id": "https://miavka.ch/#person" },
+      "areaServed": [
+        "Moutier", "Bern", "Biel", "Neuchâtel", "Lausanne", "Geneva", "Zurich", "Switzerland"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Moutier",
+        "addressRegion": "Bern",
+        "addressCountry": "CH"
+      },
+      "sameAs": [
+        "https://instagram.com/marisava33"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Brand Photography & Content Strategy Packages",
+        "itemListElement": [
+          { "@type": "Offer", "name": "The Eye — Brand Photography", "price": "690", "priceCurrency": "CHF" },
+          { "@type": "Offer", "name": "The Signal — Content Strategy", "price": "890", "priceCurrency": "CHF" },
+          { "@type": "Offer", "name": "The Visible — Photography + Content", "price": "1490", "priceCurrency": "CHF" },
+          { "@type": "Offer", "name": "The Full Build — Complete Brand Identity", "price": "2900", "priceCurrency": "CHF" }
+        ]
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --orange:     #E8321A;
+  --dark:       #0E0D0C;
+  --dark2:      #181614;
+  --dark3:      #211E1B;
+  --warm-white: #F5F0EB;
+  --warm-mid:   #E0D8CE;
+  --text-mid:   #6B6460;
+  --text-light: #9B9390;
+  --ash:        #252220;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+  font-family:'Syne',sans-serif;
+  background:var(--dark);
+  color:var(--warm-white);
+  cursor:none;
+  overflow-x:hidden;
+}
+
+/* ── CURSOR ── */
+.cursor { width:7px; height:7px; background:var(--orange); border-radius:50%; position:fixed; top:0; left:0; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); }
+.cursor-ring { width:30px; height:30px; border:1.5px solid var(--orange); border-radius:50%; position:fixed; top:0; left:0; pointer-events:none; z-index:9998; transform:translate(-50%,-50%); opacity:0.55; transition:width .3s,height .3s,opacity .3s; }
+.cursor-ring.expand { width:54px; height:54px; opacity:0.2; }
+
+/* ── PAGES ── */
+.page { display:none; min-height:100vh; }
+.page.active { display:block; }
+
+/* ── NAV ── */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:200;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:28px 56px;
+  transition:background .4s,padding .3s,backdrop-filter .4s;
+}
+nav.scrolled { background:rgba(14,13,12,0.92); backdrop-filter:blur(14px); padding:18px 56px; border-bottom:1px solid rgba(255,255,255,0.04); }
+.logo { font-family:'Bebas Neue',sans-serif; font-size:28px; letter-spacing:4px; color:var(--warm-white); cursor:pointer; }
+.logo span { color:var(--orange); }
+.burger{
+  display:none;
+  width:44px;
+  height:44px;
+  border:1px solid rgba(255,255,255,0.18);
+  background:transparent;
+  border-radius:10px;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  cursor:pointer;
+}
+.burger span{
+  display:block;
+  width:18px;
+  height:2px;
+  background:var(--warm-white);
+  opacity:0.92;
+}
+.nav-links { display:flex; gap:40px; align-items:center; }
+.nav-links a {
+  font-size:11px; font-weight:600; letter-spacing:2.5px; text-transform:uppercase;
+  color:var(--text-light); text-decoration:none; cursor:pointer;
+  position:relative; padding-bottom:4px; transition:color .2s;
+}
+.nav-links a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:1px; background:var(--orange); transition:width .35s ease; }
+.nav-links a:hover { color:var(--warm-white); }
+.nav-links a:hover::after, .nav-links a.active::after { width:100%; }
+.nav-links a.active { color:var(--orange); }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp { from{opacity:0;transform:translateY(36px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+@keyframes pulse { 0%,100%{opacity:.5;transform:scale(1)} 50%{opacity:1;transform:scale(1.08)} }
+
+.reveal { opacity:0; transform:translateY(28px); transition:opacity .9s ease,transform .9s ease; }
+.reveal.visible { opacity:1; transform:none; }
+.reveal-delay-1 { transition-delay:.12s; }
+.reveal-delay-2 { transition-delay:.24s; }
+.reveal-delay-3 { transition-delay:.36s; }
+
+/* ════════════════════════════════════
+   HOME · HERO  — centered, photo bg
+════════════════════════════════════ */
+.hero {
+  min-height:100vh;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:flex-end;
+  padding:0 56px 100px;
+  text-align:center;
+  position:relative; overflow:hidden;
+}
+
+/* Photo background layer — replace src with real photo */
+.hero-photo {
+  position:absolute; inset:0; z-index:0;
+  background: linear-gradient(160deg, #2a1f18 0%, #1a1210 40%, #0E0D0C 100%);
+  /* When real photo: background-image:url('your-photo.jpg'); background-size:cover; background-position:center top; */
+}
+/* Placeholder figure to suggest a person fading in */
+.hero-photo::before {
+  content:'';
+  position:absolute;
+  bottom:0; left:50%; transform:translateX(-50%);
+  width:380px; height:80%;
+  background:radial-gradient(ellipse at 50% 30%, rgba(80,50,30,0.5) 0%, rgba(30,20,12,0.2) 50%, transparent 75%);
+  pointer-events:none;
+}
+/* Gradient fade from photo to dark at bottom */
+.hero-photo::after {
+  content:'';
+  position:absolute; bottom:0; left:0; right:0;
+  height:65%;
+  background:linear-gradient(to bottom, transparent 0%, var(--dark) 100%);
+}
+/* Subtle vignette all sides */
+.hero-vignette {
+  position:absolute; inset:0; z-index:1;
+  background:radial-gradient(ellipse at 50% 30%, transparent 30%, rgba(14,13,12,0.7) 100%);
+  pointer-events:none;
+}
+
+.hero-content {
+  position:relative; z-index:2;
+  max-width:820px; width:100%;
+}
+
+.hero-eyebrow {
+  display:inline-flex; align-items:center; gap:14px;
+  font-size:10px; letter-spacing:5px; text-transform:uppercase; color:var(--orange);
+  margin-bottom:32px;
+  opacity:0; animation:fadeUp .6s ease forwards .15s;
+}
+.hero-eyebrow::before,.hero-eyebrow::after { content:''; display:block; width:28px; height:1px; background:var(--orange); }
+
+.hero-title {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(72px,9vw,136px);
+  line-height:.88;
+  color:var(--warm-white);
+  opacity:0; animation:fadeUp .85s ease forwards .3s;
+}
+.hero-title .accent { color:var(--orange); }
+.hero-title .stroke { -webkit-text-stroke:1.5px var(--warm-white); color:transparent; }
+
+.hero-sub {
+  font-family:'Playfair Display',serif;
+  font-style:italic;
+  font-size:clamp(17px,1.8vw,22px);
+  color:var(--text-light);
+  margin:32px auto 0; max-width:520px; line-height:1.65;
+  opacity:0; animation:fadeUp .8s ease forwards .55s;
+}
+
+.hero-cta {
+  margin-top:48px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap;
+  opacity:0; animation:fadeUp .8s ease forwards .75s;
+}
+
+/* Scroll hint */
+.hero-scroll {
+  position:absolute; bottom:36px; left:50%; transform:translateX(-50%);
+  z-index:2; display:flex; flex-direction:column; align-items:center; gap:8px;
+  opacity:0; animation:fadeIn 1s ease forwards 1.4s;
+}
+.hero-scroll span { font-size:9px; letter-spacing:4px; text-transform:uppercase; color:var(--text-mid); }
+.hero-scroll-line { width:1px; height:40px; background:linear-gradient(to bottom,var(--orange),transparent); animation:pulse 2s ease-in-out infinite; }
+
+/* ── BUTTONS ── */
+.btn-primary {
+  background:var(--orange); color:white;
+  padding:15px 38px; font-size:11px; font-weight:600; letter-spacing:2.5px; text-transform:uppercase;
+  border:none; cursor:pointer; position:relative; overflow:hidden; transition:transform .2s,box-shadow .2s;
+  display:inline-block; text-decoration:none;
+}
+.btn-primary::after { content:''; position:absolute; inset:0; background:rgba(255,255,255,0.14); transform:translateX(-100%); transition:transform .3s ease; }
+.btn-primary:hover::after { transform:translateX(0); }
+.btn-primary:hover { transform:translateY(-2px); box-shadow:0 12px 36px rgba(232,50,26,.3); }
+
+.btn-ghost {
+  background:transparent; color:var(--warm-white);
+  padding:15px 38px; font-size:11px; font-weight:600; letter-spacing:2.5px; text-transform:uppercase;
+  border:1px solid rgba(255,255,255,0.2); cursor:pointer;
+  transition:border-color .25s,color .25s; text-decoration:none; display:inline-block;
+}
+.btn-ghost:hover { border-color:var(--orange); color:var(--orange); }
+
+/* ── MARQUEE ── */
+.marquee-wrap { overflow:hidden; background:var(--orange); padding:13px 0; }
+.marquee-track { display:flex; animation:marquee 22s linear infinite; white-space:nowrap; }
+.marquee-item { font-family:'Bebas Neue',sans-serif; font-size:15px; letter-spacing:3px; color:white; padding:0 38px; flex-shrink:0; }
+.marquee-dot { color:rgba(255,255,255,0.5); padding:0 6px; }
+
+/* ════════════════════════════════════
+   HOME · PROBLEM SECTION
+════════════════════════════════════ */
+.problem-section { background:var(--warm-white); color:var(--dark); padding:110px 56px; }
+
+.problem-header { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:end; margin-bottom:80px; }
+.problem-header h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(52px,5.5vw,78px); line-height:.92; color:var(--dark); }
+.problem-header h2 em { color:var(--orange); font-style:normal; }
+.problem-header p { font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--text-mid); line-height:1.7; padding-bottom:8px; border-bottom:1px solid var(--warm-mid); }
+
+.problems-list { display:flex; flex-direction:column; }
+.problem-row {
+  display:grid; grid-template-columns:80px 1fr auto;
+  gap:40px; align-items:start; padding:48px 0;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+  cursor:default; position:relative;
+}
+.problem-row::before { content:''; position:absolute; left:-56px; top:0; bottom:0; width:0; background:rgba(232,50,26,0.04); transition:width .4s; }
+.problem-row:hover::before { width:calc(100% + 112px); }
+.problem-row:hover .problem-row-num { opacity:1; }
+.problem-row:hover .problem-row-arrow { opacity:1; transform:translateX(0); }
+
+.problem-row-num { font-family:'Bebas Neue',sans-serif; font-size:64px; line-height:1; color:var(--orange); opacity:.22; transition:opacity .3s; }
+.problem-row-content h3 { font-family:'Playfair Display',serif; font-size:clamp(20px,2vw,26px); font-weight:700; color:var(--dark); margin-bottom:12px; line-height:1.2; }
+.problem-row-content p { font-size:15px; color:var(--text-mid); line-height:1.85; max-width:560px; }
+.problem-row-arrow { font-size:28px; color:var(--orange); opacity:0; transform:translateX(-12px); transition:opacity .3s,transform .3s; padding-top:8px; }
+
+.problem-cta-row { margin-top:64px; display:flex; align-items:center; gap:48px; flex-wrap:wrap; }
+.problem-cta-row p { font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(20px,2.2vw,28px); color:var(--dark); max-width:480px; line-height:1.4; }
+.problem-cta-row em { color:var(--orange); }
+
+/* ════════════════════════════════════
+   PRICING PAGE
+════════════════════════════════════ */
+#page-pricing { background:var(--dark); }
+
+.pricing-hero {
+  padding:140px 56px 80px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.pricing-eyebrow { font-size:10px; letter-spacing:5px; text-transform:uppercase; color:var(--orange); margin-bottom:20px; display:flex; align-items:center; gap:12px; }
+.pricing-eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--orange); }
+.pricing-hero h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(64px,7vw,108px); line-height:.9; color:var(--warm-white); }
+.pricing-hero h1 span { color:var(--orange); }
+.pricing-hero p { font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--text-light); margin-top:24px; max-width:560px; line-height:1.65; }
+
+/* Beta banner */
+.beta-banner {
+  background:var(--ash); border-left:3px solid var(--orange);
+  padding:24px 40px; margin:0 56px 0;
+  display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;
+}
+.beta-banner-text .beta-tag { font-size:9px; letter-spacing:4px; text-transform:uppercase; color:var(--orange); margin-bottom:6px; }
+.beta-banner-text p { font-size:15px; color:var(--warm-white); line-height:1.6; max-width:580px; }
+.beta-banner-text p strong { color:var(--warm-white); }
+
+/* Packages grid */
+.packages-section { padding:80px 56px 120px; }
+
+.packages-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; }
+
+.pkg-card {
+  background:var(--dark2); padding:48px 40px;
+  position:relative; overflow:hidden;
+  border-top:2px solid transparent;
+  transition:border-color .3s,background .3s;
+  display:flex; flex-direction:column;
+}
+.pkg-card:hover { border-color:var(--orange); background:var(--dark3); }
+.pkg-card.featured { background:var(--dark3); border-top:2px solid var(--orange); }
+
+/* Big background number */
+.pkg-card::before {
+  content:attr(data-num);
+  position:absolute; right:-8px; top:-16px;
+  font-family:'Bebas Neue',sans-serif; font-size:160px;
+  color:rgba(255,255,255,0.03); line-height:1; pointer-events:none;
+  transition:color .3s;
+}
+.pkg-card:hover::before { color:rgba(232,50,26,0.06); }
+
+.pkg-tag { font-size:9px; letter-spacing:4px; text-transform:uppercase; color:var(--orange); margin-bottom:20px; }
+.pkg-name { font-family:'Bebas Neue',sans-serif; font-size:52px; line-height:.92; color:var(--warm-white); margin-bottom:8px; }
+.pkg-duration { font-size:12px; color:var(--text-mid); letter-spacing:2px; text-transform:uppercase; margin-bottom:28px; }
+
+.pkg-divider { width:32px; height:1px; background:var(--orange); margin-bottom:28px; }
+
+.pkg-for {
+  font-family:'Playfair Display',serif; font-style:italic;
+  font-size:16px; color:var(--text-light); line-height:1.6;
+  margin-bottom:32px;
+}
+
+.pkg-includes { list-style:none; display:flex; flex-direction:column; gap:10px; margin-bottom:40px; flex:1; }
+.pkg-includes li { display:flex; align-items:flex-start; gap:12px; font-size:14px; color:rgba(245,240,235,0.7); line-height:1.5; }
+.pkg-includes li::before { content:'→'; color:var(--orange); flex-shrink:0; font-size:13px; margin-top:1px; }
+
+.pkg-price-row { display:flex; align-items:baseline; gap:8px; margin-top:auto; padding-top:32px; border-top:1px solid rgba(255,255,255,0.06); }
+.pkg-price { font-family:'Bebas Neue',sans-serif; font-size:56px; color:var(--orange); line-height:1; }
+.pkg-price-unit { font-size:13px; color:var(--text-mid); letter-spacing:1px; }
+
+/* Full-width featured card */
+.pkg-card.full-width { grid-column:1/-1; flex-direction:row; gap:60px; align-items:start; }
+.pkg-card.full-width .pkg-left { flex:0 0 320px; }
+.pkg-card.full-width .pkg-right { flex:1; display:grid; grid-template-columns:1fr 1fr; gap:0 48px; }
+.pkg-card.full-width .pkg-price { font-size:72px; }
+.pkg-card.full-width .pkg-price-row { border-top:none; padding-top:0; margin-top:16px; }
+
+/* Pricing note */
+.pricing-note { margin:48px 56px 0; padding:32px 40px; background:var(--ash); border-top:1px solid rgba(255,255,255,0.05); }
+.pricing-note p { font-size:14px; color:var(--text-mid); line-height:1.8; max-width:680px; }
+.pricing-note p strong { color:var(--warm-white); }
+
+/* ════════════════════════════════════
+   HOME · HOW I WORK
+════════════════════════════════════ */
+.how-section { background:var(--dark3); padding:110px 56px; }
+.how-grid { display:grid; grid-template-columns:1fr 2fr; gap:80px; align-items:start; }
+.how-left h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(52px,5vw,76px); line-height:.92; color:var(--warm-white); }
+.how-left h2 span { color:var(--orange); }
+.how-left p { font-size:15px; color:var(--text-mid); line-height:1.8; margin-top:24px; }
+.how-steps { display:flex; flex-direction:column; }
+.how-step { display:grid; grid-template-columns:64px 1fr; gap:28px; padding:40px 0; border-bottom:1px solid rgba(255,255,255,0.06); transition:transform .3s; }
+.how-step:hover { transform:translateX(8px); }
+.step-num { font-family:'Bebas Neue',sans-serif; font-size:52px; color:var(--orange); line-height:1; }
+.step-content h3 { font-family:'Playfair Display',serif; font-size:22px; color:var(--warm-white); margin-bottom:10px; }
+.step-content p { font-size:15px; color:var(--text-mid); line-height:1.75; }
+
+/* ════════════════════════════════════
+   HOME · FREE CALL
+════════════════════════════════════ */
+.call-section { background:var(--dark); padding:110px 56px; position:relative; overflow:hidden; }
+.call-section::before { content:'FREE CALL'; position:absolute; right:-40px; top:50%; transform:translateY(-50%) rotate(90deg); font-family:'Bebas Neue',sans-serif; font-size:120px; color:rgba(255,255,255,.02); letter-spacing:8px; white-space:nowrap; pointer-events:none; }
+.call-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+.call-left .label { font-size:10px; letter-spacing:4px; text-transform:uppercase; color:var(--orange); margin-bottom:20px; }
+.call-left h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(44px,5vw,72px); line-height:.95; color:var(--warm-white); margin-bottom:28px; }
+.call-left h2 span { color:var(--orange); }
+.call-left p { font-size:16px; color:var(--text-mid); line-height:1.8; margin-bottom:32px; }
+.call-bullets { list-style:none; display:flex; flex-direction:column; gap:14px; }
+.call-bullets li { display:flex; align-items:flex-start; gap:14px; font-size:15px; color:rgba(245,240,235,.75); }
+.call-bullets li::before { content:'→'; color:var(--orange); flex-shrink:0; font-weight:600; }
+.call-form { display:flex; flex-direction:column; gap:0; }
+.call-field { margin-bottom:16px; }
+.call-field label { display:block; font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--text-mid); margin-bottom:8px; }
+.call-field input,.call-field select,.call-field textarea { width:100%; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.1); color:var(--warm-white); padding:14px 18px; font-size:15px; font-family:'Syne',sans-serif; outline:none; transition:border-color .2s; appearance:none; }
+.call-field input:focus,.call-field select:focus,.call-field textarea:focus { border-color:var(--orange); }
+.call-field input::placeholder,.call-field textarea::placeholder { color:var(--text-mid); }
+.call-field select option { background:var(--dark2); }
+.call-field textarea { resize:vertical; min-height:90px; }
+.call-time-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px; }
+.time-slot { padding:13px; border:1px solid rgba(255,255,255,.1); text-align:center; cursor:pointer; font-size:13px; color:var(--text-light); transition:all .2s; }
+.time-slot:hover { border-color:rgba(232,50,26,.5); color:var(--warm-white); }
+.time-slot.selected { border-color:var(--orange); background:rgba(232,50,26,.1); color:var(--orange); }
+.call-submitted { display:none; text-align:center; padding:60px 20px; }
+.call-submitted.active { display:block; }
+.call-submitted h3 { font-family:'Bebas Neue',sans-serif; font-size:52px; color:var(--orange); margin-bottom:16px; }
+.call-submitted p { font-size:17px; color:var(--text-mid); line-height:1.7; }
+
+/* ════════════════════════════════════
+   PORTFOLIO PAGE
+════════════════════════════════════ */
+#page-portfolio { background:var(--dark); }
+
+.portfolio-coming {
+  min-height:100vh; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; text-align:center;
+  padding:120px 56px;
+  position:relative; overflow:hidden;
+}
+.portfolio-coming::before {
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(ellipse at 50% 50%, rgba(232,50,26,0.04) 0%, transparent 70%);
+}
+.portfolio-coming-inner { position:relative; z-index:1; max-width:640px; }
+.portfolio-coming .eyebrow { font-size:10px; letter-spacing:5px; text-transform:uppercase; color:var(--orange); margin-bottom:24px; }
+.portfolio-coming h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(52px,6vw,88px); line-height:.9; color:var(--warm-white); margin-bottom:32px; }
+.portfolio-coming h2 span { color:var(--orange); }
+.portfolio-coming p { font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--text-mid); line-height:1.7; margin-bottom:48px; }
+
+.cases-placeholder { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; margin-top:80px; width:100%; }
+.case-slot {
+  aspect-ratio:3/4; background:var(--ash);
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-end;
+  padding:24px; position:relative; overflow:hidden;
+  border-top:1px solid rgba(255,255,255,0.04);
+}
+.case-slot::before { content:''; position:absolute; inset:0; background:linear-gradient(160deg,rgba(232,50,26,0.04) 0%,transparent 60%); }
+.case-slot-num { font-family:'Bebas Neue',sans-serif; font-size:80px; color:rgba(255,255,255,0.04); position:absolute; top:16px; left:20px; line-height:1; }
+.case-slot-label { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,0.2); position:relative; z-index:1; }
+
+/* ════════════════════════════════════
+   ABOUT PAGE
+════════════════════════════════════ */
+#page-about { background:var(--dark); }
+.about-hero { min-height:72vh; display:grid; grid-template-columns:1fr 1fr; align-items:end; padding:130px 56px 90px; gap:80px; border-bottom:1px solid rgba(255,255,255,0.05); }
+.about-hero .label { font-size:10px; letter-spacing:4px; text-transform:uppercase; color:var(--orange); margin-bottom:20px; }
+.about-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(56px,7vw,100px); line-height:.9; color:var(--warm-white); }
+.about-title .accent { color:var(--orange); }
+.about-title .stroke { -webkit-text-stroke:1.5px var(--warm-white); color:transparent; }
+.about-quote { font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(18px,2.2vw,26px); color:var(--text-light); line-height:1.6; border-left:3px solid var(--orange); padding-left:28px; }
+.about-story { background:var(--warm-white); color:var(--dark); padding:100px 56px; }
+.story-cols { display:grid; grid-template-columns:1fr 1fr; gap:80px; max-width:1100px; }
+.chapter { margin-bottom:56px; }
+.ch-num { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--orange); margin-bottom:12px; }
+.ch-title { font-family:'Playfair Display',serif; font-size:26px; color:var(--dark); margin-bottom:16px; }
+.ch-text { font-size:16px; color:var(--text-mid); line-height:1.85; }
+.about-skills { background:var(--dark); padding:80px 56px; }
+.skills-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin-top:48px; }
+.skill-card { background:var(--dark2); padding:36px 28px; border-top:2px solid transparent; transition:border-color .3s,transform .3s; }
+.skill-card:hover { border-color:var(--orange); transform:translateY(-4px); }
+.skill-icon { font-size:32px; margin-bottom:16px; }
+.skill-card h3 { font-family:'Playfair Display',serif; font-size:18px; color:var(--orange); margin-bottom:10px; }
+.skill-card p { font-size:14px; color:var(--text-mid); line-height:1.7; }
+
+/* ════════════════════════════════════
+   BOOKS PAGE
+════════════════════════════════════ */
+#page-books { background:var(--warm-white); color:var(--dark); }
+.books-header { padding:120px 56px 60px; background:var(--dark); color:var(--warm-white); }
+.books-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(56px,7vw,100px); line-height:.9; }
+.books-title span { color:var(--orange); }
+.books-subtitle { font-family:'Playfair Display',serif; font-style:italic; font-size:19px; color:var(--text-light); margin-top:20px; max-width:500px; }
+.books-filters { padding:28px 56px; background:var(--dark2); display:flex; gap:10px; flex-wrap:wrap; }
+.filter-btn { padding:8px 22px; font-size:10px; letter-spacing:1.5px; text-transform:uppercase; background:transparent; color:var(--text-light); border:1px solid rgba(255,255,255,.12); cursor:pointer; transition:all .2s; }
+.filter-btn:hover,.filter-btn.active { background:var(--orange); color:white; border-color:var(--orange); }
+.books-grid { padding:56px; display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:28px; }
+.book-card { background:white; border:1px solid var(--warm-mid); transition:transform .3s,box-shadow .3s; cursor:pointer; }
+.book-card:hover { transform:translateY(-8px); box-shadow:0 24px 60px rgba(0,0,0,.14); }
+.book-cover { height:210px; background:linear-gradient(135deg,var(--dark) 0%,#2A2520 100%); display:flex; align-items:center; justify-content:center; padding:24px; position:relative; overflow:hidden; }
+.book-cover::after { content:''; position:absolute; left:0; top:0; bottom:0; width:7px; background:var(--orange); }
+.book-spine { position:absolute; right:0; top:0; bottom:0; width:20px; background:rgba(0,0,0,.4); }
+.book-cover-title { font-family:'Bebas Neue',sans-serif; font-size:20px; color:var(--warm-white); text-align:center; letter-spacing:1px; line-height:1.3; z-index:1; }
+.book-info { padding:20px; }
+.book-title { font-family:'Playfair Display',serif; font-size:16px; color:var(--dark); margin-bottom:4px; line-height:1.3; }
+.book-author { font-size:13px; color:var(--text-mid); margin-bottom:12px; }
+.book-rating { display:flex; gap:3px; margin-bottom:12px; }
+.star { color:var(--orange); font-size:13px; }
+.star.e { color:var(--warm-mid); }
+.book-tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+.book-tag { padding:3px 10px; font-size:10px; letter-spacing:1px; text-transform:uppercase; border:1px solid var(--warm-mid); color:var(--text-mid); }
+.book-tag.p { border-color:var(--orange); color:var(--orange); }
+.book-note { font-size:13px; color:var(--text-mid); font-style:italic; line-height:1.65; border-top:1px solid var(--warm-mid); padding-top:12px; }
+
+/* ── FOOTER ── */
+footer { background:var(--dark); padding:60px 56px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgba(255,255,255,.05); }
+.footer-logo { font-family:'Bebas Neue',sans-serif; font-size:28px; color:var(--warm-white); letter-spacing:3px; }
+.footer-logo span { color:var(--orange); }
+.footer-links { display:flex; gap:28px; }
+.footer-links a { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--text-mid); text-decoration:none; cursor:pointer; transition:color .2s; }
+.footer-links a:hover { color:var(--orange); }
+.footer-copy { font-size:12px; color:var(--text-mid); }
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  nav { padding:20px 24px; }
+  nav.scrolled { padding:14px 24px; }
+  .burger { display:inline-flex; }
+  .nav-links { display:none; }
+  nav.menu-open .nav-links { display:flex; }
+  nav.menu-open { background:rgba(14,13,12,0.96); backdrop-filter:blur(14px); }
+  nav.menu-open .nav-links {
+    position:absolute;
+    left:0; right:0;
+    top:100%;
+    padding:14px 24px 18px;
+    flex-direction:column;
+    gap:14px;
+    background:rgba(14,13,12,0.96);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+  }
+  nav.menu-open .nav-links a { font-size:12px; letter-spacing:2.5px; padding:6px 0; }
+  .hero { padding:0 24px 80px; }
+  .hero-title { font-size:clamp(64px,14vw,96px); }
+  .problem-section,.how-section,.call-section { padding:60px 24px; }
+  .problem-header { grid-template-columns:1fr; gap:24px; }
+  .problem-row { grid-template-columns:60px 1fr; }
+  .problem-row-arrow { display:none; }
+  .how-grid { grid-template-columns:1fr; gap:40px; }
+  .call-grid { grid-template-columns:1fr; gap:48px; }
+  .packages-grid { grid-template-columns:1fr; }
+  .pkg-card.full-width { grid-column:auto; flex-direction:column; gap:32px; }
+  .pkg-card.full-width .pkg-left { flex:none; }
+  .pkg-card.full-width .pkg-right { grid-template-columns:1fr; }
+  .pricing-hero,.packages-section,.pricing-note { padding-left:24px; padding-right:24px; }
+  .beta-banner { margin:0 24px; padding:20px 24px; }
+  .about-hero { grid-template-columns:1fr; padding:110px 24px 60px; }
+  .story-cols { grid-template-columns:1fr; gap:0; }
+  .skills-grid { grid-template-columns:1fr 1fr; }
+  .books-header,.books-filters { padding-left:24px; padding-right:24px; }
+  .books-grid { padding:24px; }
+  .cases-placeholder { grid-template-columns:1fr; }
+  footer { flex-direction:column; gap:24px; text-align:center; }
+  .footer-links { flex-wrap:wrap; justify-content:center; }
+}
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<nav id="mainNav">
+  <div class="logo" onclick="showPage('home')">MARI<span>.</span></div>
+  <button class="burger" id="burgerBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="mobileNav">
+    <a onclick="showPage('home')" id="nav-home" class="active">Home</a>
+    <a onclick="showPage('pricing')" id="nav-pricing">Packages</a>
+    <a onclick="showPage('portfolio')" id="nav-portfolio">Work</a>
+    <a onclick="showPage('about')" id="nav-about">About</a>
+    <a onclick="showPage('books')" id="nav-books">Books</a>
+    <a href="articles.html">Articles</a>
+    <a href="https://cal.com/mari-miavka/business-call" target="_blank" rel="noopener">Book a Call</a>
+  </div>
+</nav>
+
+<!-- ═══════════ HOME ═══════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO — centered, photo placeholder fading to dark -->
+  <section class="hero">
+    <div class="hero-photo"></div>
+    <div class="hero-vignette"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Brand Photographer · Content Strategist · Customer development</p>
+      <h1 class="hero-title">
+        YOU WORK<br>
+        AT A LEVEL<br>
+        <span class="stroke">NOBODY</span><br>
+        CAN<br>
+        <span class="accent">SEE YET.</span>
+      </h1>
+      <p class="hero-sub">You're already excellent. The problem is — nobody can tell. Not from the outside. Not yet.</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="scrollToCall()">Book a Free 30-Min Call →</button>
+        <button class="btn-ghost" onclick="showPage('about')">My Story →</button>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">Stop Explaining Your Price</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Look Like Who You Actually Are</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">The Right Clients Pre-Convinced</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Close The Gap</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Be Seen Accurately</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Stop Being Invisible</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Stop Explaining Your Price</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Look Like Who You Actually Are</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">The Right Clients Pre-Convinced</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Close The Gap</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Be Seen Accurately</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Stop Being Invisible</span><span class="marquee-dot">·</span>
+    </div>
+  </div>
+
+  <!-- PROBLEMS -->
+  <section class="problem-section">
+    <div class="problem-header">
+      <h2 class="reveal">YOU CAN'T SEE<br>WHAT THEY<br><em>SEE.</em></h2>
+      <p class="reveal reveal-delay-1">Someone with your level of work shouldn't be explaining themselves. And yet — here you are.</p>
+    </div>
+    <div class="problems-list">
+      <div class="problem-row reveal">
+        <div class="problem-row-num">01</div>
+        <div class="problem-row-content">
+          <h3>You've been excellent for years. Your online presence says otherwise.</h3>
+          <p>They land on your profile. They see generic. They move on. Not because your work isn't good — because nothing tells them that. You think you're showing up fine. You're probably not. Nobody is telling you.</p>
+        </div>
+        <div class="problem-row-arrow">→</div>
+      </div>
+      <div class="problem-row reveal reveal-delay-1">
+        <div class="problem-row-num">02</div>
+        <div class="problem-row-content">
+          <h3>You know what you do. You have no idea how you come across.</h3>
+          <p>There's a version of you that exists only in the minds of your best clients. The one who really understands what you're worth. That's not what a stranger sees when they find you online. The two versions are completely different people. That gap is the whole problem.</p>
+        </div>
+        <div class="problem-row-arrow">→</div>
+      </div>
+      <div class="problem-row reveal reveal-delay-2">
+        <div class="problem-row-num">03</div>
+        <div class="problem-row-content">
+          <h3>You say your price. Then you immediately explain it. That's the tell.</h3>
+          <p>A number lands. You watch their face. And then it starts — the half-sentences, the 'but of course that includes...' This isn't a confidence issue. It's a perception issue. When what they see matches who you are, the price stops needing a defence.</p>
+        </div>
+        <div class="problem-row-arrow">→</div>
+      </div>
+    </div>
+    <div class="problem-cta-row reveal">
+      <p>If any of this sounds familiar — <em>let's just talk.</em></p>
+      <button class="btn-primary" onclick="scrollToCall()">Book a Free 30-Min Call →</button>
+    </div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section class="how-section">
+    <div class="how-grid">
+      <div class="how-left reveal">
+        <h2>HOW<br>I <span>WORK</span></h2>
+        <p>No templates. No guesswork. Every project starts with the gap between who you are and how you come across — before a camera is ever touched.</p>
+        <br>
+        <button class="btn-ghost" onclick="showPage('pricing')" style="margin-top:16px">See Packages →</button>
+      </div>
+      <div class="how-steps">
+        <div class="how-step reveal"><div class="step-num">01</div><div class="step-content"><h3>We find the gap — together.</h3><p>We start by looking at how you actually come across right now. Not your bio. Not your best case. What a stranger sees when they find you online. Most people have never honestly looked. We look together.</p></div></div>
+        <div class="how-step reveal reveal-delay-1"><div class="step-num">02</div><div class="step-content"><h3>We build what that person actually looks like.</h3><p>Photography and visual direction built around who you actually are. Not stock photography. Not a headshot session. Images that make the right people stop and think: I need to talk to this person.</p></div></div>
+        <div class="how-step reveal reveal-delay-2"><div class="step-num">03</div><div class="step-content"><h3>We put it where your clients are already looking.</h3><p>LinkedIn, Instagram, your website — your presence where your ideal clients actually are, in a language that builds trust before you ever speak.</p></div></div>
+        <div class="how-step reveal reveal-delay-3"><div class="step-num">04</div><div class="step-content"><h3>You stop justifying. They arrive pre-convinced.</h3><p>The right clients show up already knowing what you're worth. The ones who question your price stop appearing. This is what happens when your outside finally matches your inside.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FREE CALL -->
+  <section class="call-section" id="call-section">
+    <div class="call-grid">
+      <div class="call-left reveal">
+        <p class="label">Let's just talk</p>
+        <h2>30 MINUTES.<br><span>HONEST.</span></h2>
+        <p>Here's exactly what happens. We get on a call. I look at your current online presence beforehand — your profile, your photos, how you show up. Then I tell you honestly what I see. Even if we don't work together. Especially then.</p>
+        <ul class="call-bullets">
+          <li>I review your online presence before the call — LinkedIn, Instagram, website</li>
+          <li>You get an honest assessment of the gap. No softening.</li>
+          <li>No pitch. No agenda. Just a real conversation.</li>
+        </ul>
+      </div>
+      <div class="reveal reveal-delay-1" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:24px;">
+        <p style="font-size:14px;color:var(--text-mid);line-height:1.7;">Pick a time that works for you. I'll review your online presence before we speak — so we don't waste a minute of the 30.</p>
+        <a href="https://cal.com/mari-miavka/business-call" target="_blank" rel="noopener" class="btn-primary" style="padding:20px 48px;font-size:13px;">Book My Free 30-Min Call →</a>
+        <p style="font-size:12px;color:var(--text-mid);letter-spacing:1px;">Opens in Cal.com — free, no account needed</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">MARI<span>.</span></div>
+    <div class="footer-links">
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('pricing')">Packages</a>
+      <a onclick="showPage('portfolio')">Work</a>
+      <a onclick="showPage('about')">About</a>
+      <a href="https://instagram.com/marisava33" target="_blank">Instagram</a>
+    </div>
+    <p class="footer-copy">© 2026 Mari Miavka</p>
+  </footer>
+</div>
+
+<!-- ═══════════ PRICING ═══════════ -->
+<div id="page-pricing" class="page">
+
+  <div class="pricing-hero">
+    <p class="pricing-eyebrow">The offer</p>
+    <h1>THE<br><span>PACKAGES</span></h1>
+    <p>Four offers. Clear scope. Clear deliverables. No guessing what you're paying for.</p>
+  </div>
+
+  <div class="beta-banner reveal">
+    <div class="beta-banner-text">
+      <p class="beta-tag">· Foundation Clients · 3 Remaining ·</p>
+      <p>I'm looking for <strong>3 people</strong> to document a real transformation with. You get everything a full-paying client gets. You pay hard costs only — travel, materials. In exchange: honest feedback and a fully documented case study. <strong>This is not charity. This is how I build proof while you close the gap.</strong></p>
+    </div>
+    <button class="btn-primary" onclick="scrollToCall()">Apply for Beta →</button>
+  </div>
+
+  <div class="packages-section">
+    <div class="packages-grid">
+
+      <!-- PKG 01 -->
+      <div class="pkg-card reveal" data-num="01">
+        <p class="pkg-tag">· Package 01 ·</p>
+        <h2 class="pkg-name">THE EYE</h2>
+        <p class="pkg-duration">Photography · Half day</p>
+        <div class="pkg-divider"></div>
+        <p class="pkg-for">You need images that do the talking. Not a headshot. A visual library that makes the right people stop.</p>
+        <ul class="pkg-includes">
+          <li>Pre-shoot brand direction call (45 min)</li>
+          <li>Half-day shoot — 3–4 hours on location</li>
+          <li>40 selected + retouched images</li>
+          <li>Usage guide — where and how to deploy</li>
+          <li>Delivery in 10 working days</li>
+        </ul>
+        <div class="pkg-price-row">
+          <span class="pkg-price">690</span>
+          <span class="pkg-price-unit">CHF</span>
+        </div>
+      </div>
+
+      <!-- PKG 02 -->
+      <div class="pkg-card reveal reveal-delay-1" data-num="02">
+        <p class="pkg-tag">· Package 02 ·</p>
+        <h2 class="pkg-name">THE SIGNAL</h2>
+        <p class="pkg-duration">Content Strategy + Instagram · 3 weeks</p>
+        <div class="pkg-divider"></div>
+        <p class="pkg-for">You're putting content out. It's not landing. Not because you lack things to say — because there's no clear story underneath.</p>
+        <ul class="pkg-includes">
+          <li>Brand positioning review (1 hour call)</li>
+          <li>4 content pillars defined for your expertise</li>
+          <li>90-day content calendar</li>
+          <li>3 carousel templates — branded, editable</li>
+          <li>Caption copy framework</li>
+          <li>Monthly check-in call (first month)</li>
+        </ul>
+        <div class="pkg-price-row">
+          <span class="pkg-price">890</span>
+          <span class="pkg-price-unit">CHF</span>
+        </div>
+      </div>
+
+      <!-- PKG 03 — full width featured -->
+      <div class="pkg-card featured full-width reveal" data-num="03">
+        <div class="pkg-left">
+          <p class="pkg-tag">· Package 03 · Most requested ·</p>
+          <h2 class="pkg-name">THE<br>VISIBLE</h2>
+          <p class="pkg-duration">Photography + Content Strategy · 4–5 weeks</p>
+          <div class="pkg-divider"></div>
+          <p class="pkg-for">You're done doing things halfway. Close both gaps at once — how you look and how you stay visible.</p>
+          <div class="pkg-price-row">
+            <span class="pkg-price">1'490</span>
+            <span class="pkg-price-unit">CHF</span>
+          </div>
+          <div style="margin-top:28px">
+            <button class="btn-primary" onclick="scrollToCall()">Let's Talk →</button>
+          </div>
+        </div>
+        <div class="pkg-right">
+          <ul class="pkg-includes">
+            <li>Everything in The Eye — full photography session</li>
+            <li>Everything in The Signal — content strategy</li>
+            <li>Brand voice guide (written)</li>
+            <li>2 coaching calls during execution</li>
+            <li>Full handoff with usage manual</li>
+          </ul>
+          <ul class="pkg-includes">
+            <li>Visual templates for ongoing posts</li>
+            <li>LinkedIn profile review + rewrite brief</li>
+            <li>Priority turnaround — 4 weeks max</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PKG 04 -->
+      <div class="pkg-card reveal" data-num="04" style="grid-column:1/-1">
+        <p class="pkg-tag">· Package 04 · Full build ·</p>
+        <h2 class="pkg-name">THE FULL BUILD</h2>
+        <p class="pkg-duration">Identity + Photography + Strategy + Video · 8–10 weeks</p>
+        <div class="pkg-divider"></div>
+        <p class="pkg-for" style="max-width:560px">You've patched things together long enough. This is the full reset — built once, built right, built to last. It's not for everyone. You know if it's for you.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 48px;margin-top:8px">
+          <ul class="pkg-includes">
+            <li>Full brand identity — logo, colours, type, guidelines</li>
+            <li>Full-day photography session</li>
+            <li>Complete content strategy + 90-day plan</li>
+            <li>Video direction — 3 scripts + production brief</li>
+          </ul>
+          <ul class="pkg-includes">
+            <li>4 coaching calls + WhatsApp access</li>
+            <li>Monthly content review (3 months post-delivery)</li>
+            <li>Priority access to all future offers</li>
+          </ul>
+        </div>
+        <div class="pkg-price-row" style="margin-top:32px">
+          <span class="pkg-price">2'900</span>
+          <span class="pkg-price-unit">CHF</span>
+        </div>
+      </div>
+
+    </div><!-- /packages-grid -->
+  </div>
+
+  <div class="pricing-note reveal">
+    <p><strong>About the prices.</strong> These prices are intentionally low. Not because the work is cheap — because I'm building something, and I'd rather work with the right people than just bill for hours. Swiss market rate for comparable work runs 1'200–2'500 CHF for photography alone, 5'000–12'000 CHF for a full brand build. Mine doesn't, yet. After the first 12 clients, prices go up. Once. Clearly. Travel outside the Moutier / Bern / Lausanne zone is billed at cost. 2 rounds of revisions included on all visual work.</p>
+  </div>
+
+  <footer>
+    <div class="footer-logo">MARI<span>.</span></div>
+    <div class="footer-links">
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('pricing')">Packages</a>
+      <a onclick="showPage('about')">About</a>
+      <a href="https://instagram.com/marisava33" target="_blank">Instagram</a>
+    </div>
+    <p class="footer-copy">© 2026 Mari Miavka</p>
+  </footer>
+</div>
+
+<!-- ═══════════ PORTFOLIO / WORK ═══════════ -->
+<div id="page-portfolio" class="page">
+  <div class="portfolio-coming">
+    <div class="portfolio-coming-inner">
+      <p class="eyebrow">· Real transformations ·</p>
+      <h2>THIS PAGE<br><span>FILLS UP.</span></h2>
+      <p>Every slot here is reserved for a documented transformation. Before and after. The gap — and the story of closing it. I'm actively looking for the first 3 people. Yours could be the first.</p>
+      <button class="btn-primary" onclick="scrollToCall()">Be One of the First →</button>
+    </div>
+    <div class="cases-placeholder">
+      <div class="case-slot"><div class="case-slot-num">01</div><p class="case-slot-label">Transformation — Reserved</p></div>
+      <div class="case-slot"><div class="case-slot-num">02</div><p class="case-slot-label">Transformation — Reserved</p></div>
+      <div class="case-slot"><div class="case-slot-num">03</div><p class="case-slot-label">Transformation — Reserved</p></div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo">MARI<span>.</span></div>
+    <div class="footer-links">
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('pricing')">Packages</a>
+      <a onclick="showPage('about')">About</a>
+      <a href="https://instagram.com/marisava33" target="_blank">Instagram</a>
+    </div>
+    <p class="footer-copy">© 2026 Mari Miavka</p>
+  </footer>
+</div>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<div id="page-about" class="page">
+  <section class="about-hero">
+    <div>
+      <p class="label">My story</p>
+      <h1 class="about-title">I WAS<br>TOLD I<br>WAS<br><span class="stroke">WORTH</span><br><span class="accent">NOTHING.</span></h1>
+    </div>
+    <div class="about-quote">
+      "If you burp, it means the poison is leaving. You have a warm strong sun inside — rely on it, follow it, allow it to guide you."
+      <br><br><span style="font-size:15px;font-style:normal;color:var(--text-mid);">The sentence I needed three years ago.</span>
+    </div>
+  </section>
+  <section class="about-story">
+    <p style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--orange);margin-bottom:48px;">The chapters</p>
+    <div class="story-cols">
+      <div>
+        <div class="chapter reveal"><p class="ch-num">Chapter 01</p><h3 class="ch-title">The Beginning</h3><p class="ch-text">I grew up in Kyiv being told I was worth nothing. My mother's voice. My father — a psychologist — was my counterweight, guide, and north star. Early on I learned to read a room fast, to detect danger in a face before it arrived. That hypervigilance never left me. It became a skill.</p></div>
+        <div class="chapter reveal"><p class="ch-num">Chapter 02</p><h3 class="ch-title">The Champion</h3><p class="ch-text">I became downhill cycling champion of Ukraine. No family support, no sponsor — just obsession and speed. I know what it takes to build an identity from zero. I also know what it feels like when someone destroys it. A boyfriend stole my bike and sold it. I couldn't compete. That loss taught me more about resilience than any victory.</p></div>
+        <div class="chapter reveal"><p class="ch-num">Chapter 03</p><h3 class="ch-title">The Escape</h3><p class="ch-text">I taught myself to code and got hired in Berlin and Zurich — no degree, pure obsession. Then Zurich became a cage. I was living my husband's life: his mountains, his adrenaline, his rules. When war started in Ukraine he found someone else. On crutches, I left.</p></div>
+      </div>
+      <div>
+        <div class="chapter reveal"><p class="ch-num">Chapter 04</p><h3 class="ch-title">The Dark Room</h3><p class="ch-text">Three years of fighting — in courts and inside myself. I didn't know who I was. Document dependencies kept me tied to a marriage I'd already left. One night I asked a friend to tattoo my arms until dawn. I needed the inner pain to have a physical form. Now those marks are mine.</p></div>
+        <div class="chapter reveal"><p class="ch-num">Chapter 05</p><h3 class="ch-title">The Rebuild</h3><p class="ch-text">Moutier. French lessons. Books. Real work on myself. I found something rarer than talent: self-love built from the ground up, alone, after everything. I stopped doing work I hated for people who didn't value it. I stopped betraying myself. Now I help others do the same.</p></div>
+        <div class="chapter reveal"><p class="ch-num">Now</p><h3 class="ch-title">Why This Work</h3><p class="ch-text">I spent years being excellent at things nobody could see. Not because I wasn't showing up — because I didn't know what I looked like from the outside. No one was honest enough to tell me. That gap is exactly what I now close for the people I work with. I'm not a strategist who studied this in a classroom. I lived it. My eye for this comes from being on both sides of the same invisible wall.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="about-skills">
+    <p style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--orange);">What I actually do</p>
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--warm-white);margin-top:8px;">The work</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal"><div class="skill-icon">📸</div><h3>Visual Identity</h3><p>You end up with images that work. Photos that make the right people stop and think: I need to talk to this person.</p></div>
+      <div class="skill-card reveal reveal-delay-1"><div class="skill-icon">🎬</div><h3>Video Storytelling</h3><p>You get video that earns trust before the first conversation. Your client arrives already knowing why you're the right choice.</p></div>
+      <div class="skill-card reveal reveal-delay-2"><div class="skill-icon">🧭</div><h3>Brand Positioning</h3><p>You stop attracting the wrong people. You stop justifying your price. You know exactly what to say — and what to drop.</p></div>
+      <div class="skill-card reveal reveal-delay-3"><div class="skill-icon">📱</div><h3>Content Strategy</h3><p>You get a system that keeps you visible without burning you out. Built around your actual story, not someone else's formula.</p></div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-logo">MARI<span>.</span></div>
+    <div class="footer-links">
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('pricing')">Packages</a>
+      <a onclick="showPage('portfolio')">Work</a>
+      <a href="https://instagram.com/marisava33" target="_blank">Instagram</a>
+    </div>
+    <p class="footer-copy">© 2026 Mari Miavka</p>
+  </footer>
+</div>
+
+<!-- ═══════════ BOOKS ═══════════ -->
+<div id="page-books" class="page">
+  <section class="books-header">
+    <p style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--orange);margin-bottom:16px;">What shaped me</p>
+    <h1 class="books-title">THE BOOKS<br>THAT<br><span>CHANGED</span><br>ME</h1>
+    <p class="books-subtitle">Austin Kleon says show your work. These are the books that made mine possible.</p>
+  </section>
+  <div class="books-filters">
+    <button class="filter-btn active" onclick="filterBooks('all',this)">All</button>
+    <button class="filter-btn" onclick="filterBooks('brand',this)">#brand</button>
+    <button class="filter-btn" onclick="filterBooks('self',this)">#self</button>
+    <button class="filter-btn" onclick="filterBooks('creativity',this)">#creativity</button>
+    <button class="filter-btn" onclick="filterBooks('business',this)">#business</button>
+    <button class="filter-btn" onclick="filterBooks('psychology',this)">#psychology</button>
+  </div>
+  <div class="books-grid" id="booksGrid"></div>
+  <footer>
+    <div class="footer-logo">MARI<span>.</span></div>
+    <div class="footer-links">
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('pricing')">Packages</a>
+      <a onclick="showPage('about')">About</a>
+      <a href="https://instagram.com/marisava33" target="_blank">Instagram</a>
+    </div>
+    <p class="footer-copy">© 2026 Mari Miavka</p>
+  </footer>
+</div>
+
+<script>
+/* ── CURSOR ── */
+const cur = document.getElementById('cur');
+const ring = document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
+(function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
+document.querySelectorAll('button,a,.time-slot,.problem-row,.book-card,.skill-card,.pkg-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('expand'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('expand'));
+});
+
+/* ── NAV SCROLL ── */
+window.addEventListener('scroll',()=>{
+  document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);
+});
+
+/* ── MOBILE NAV ── */
+const burgerBtn = document.getElementById('burgerBtn');
+if (burgerBtn) {
+  const nav = document.getElementById('mainNav');
+  const navLinks = document.getElementById('mobileNav');
+  const closeMenu = () => {
+    nav.classList.remove('menu-open');
+    burgerBtn.setAttribute('aria-expanded', 'false');
+    burgerBtn.setAttribute('aria-label', 'Open menu');
+  };
+  const openMenu = () => {
+    nav.classList.add('menu-open');
+    burgerBtn.setAttribute('aria-expanded', 'true');
+    burgerBtn.setAttribute('aria-label', 'Close menu');
+  };
+
+  burgerBtn.addEventListener('click', () => {
+    const isOpen = nav.classList.contains('menu-open');
+    if (isOpen) closeMenu();
+    else openMenu();
+  });
+
+  navLinks?.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target && target.tagName === 'A') closeMenu();
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+}
+
+/* ── PAGES ── */
+function showPage(name){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  document.querySelectorAll('.nav-links a[id]').forEach(a=>a.classList.remove('active'));
+  const el=document.getElementById('nav-'+name);
+  if(el)el.classList.add('active');
+  window.scrollTo(0,0);
+  setTimeout(observeReveals,60);
+  if(name==='books')renderBooks('all');
+}
+function scrollToCall(){window.open('https://cal.com/mari-miavka/business-call','_blank','noopener');}
+
+/* ── REVEAL ── */
+function observeReveals(){
+  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>{el.classList.remove('visible');obs.observe(el);});
+}
+observeReveals();
+
+/* ── BOOKS ── */
+const books=[
+  {title:"Building a StoryBrand",author:"Donald Miller",r:5,tags:["brand","business"],p:"brand",note:"Changed how I think about every word on my website. Your client is the hero. You are the guide. Simple and devastating."},
+  {title:"Show Your Work",author:"Austin Kleon",r:5,tags:["creativity","brand"],p:"creativity",note:"The reason I document everything in public. Share the process, not just the result. This is how you build an audience before you're famous."},
+  {title:"$100M Offers",author:"Alex Hormozi",r:5,tags:["business"],p:"business",note:"Brutal and practical. Made me stop being afraid of my price. Your price is a signal about what you believe about your own value."},
+  {title:"The 6 Pillars of Self-Esteem",author:"Nathaniel Branden",r:5,tags:["psychology","self"],p:"self",note:"Currently reading. Everything I do to rebuild my relationship with my own worth starts here. The most important book this year."},
+  {title:"Steal Like an Artist",author:"Austin Kleon",r:5,tags:["creativity"],p:"creativity",note:"Gave me permission to be influenced, to remix, to be human. Creativity is not born from a vacuum. Everything connects."},
+  {title:"The Myth of Normal",author:"Gabor Maté",r:5,tags:["psychology","self"],p:"psychology",note:"Currently listening. Why trauma is not what happened to you — it's what happened inside you as a result. Explains a lot of my story."},
+  {title:"Deep Work",author:"Cal Newport",r:4,tags:["business","self"],p:"self",note:"Important for someone who thinks in big pictures but struggles with execution. The answer is structure, not willpower."},
+  {title:"The War of Art",author:"Steven Pressfield",r:5,tags:["creativity","self"],p:"creativity",note:"Named the enemy — Resistance. The force that keeps you from doing your real work. Reading this once a year minimum."},
+  {title:"Thinking in Systems",author:"Donella Meadows",r:4,tags:["business"],p:"business",note:"My programmer brain loved this. Everything is a system. Once you see it, you can't unsee it."},
+];
+function stars(n){return'★'.repeat(n)+'<span class="star e">★</span>'.repeat(5-n);}
+function renderBooks(f='all'){
+  const g=document.getElementById('booksGrid');if(!g)return;
+  const list=f==='all'?books:books.filter(b=>b.tags.includes(f));
+  g.innerHTML=list.map(b=>`
+    <div class="book-card">
+      <div class="book-cover"><div class="book-spine"></div><div class="book-cover-title">${b.title.toUpperCase()}</div></div>
+      <div class="book-info">
+        <div class="book-title">${b.title}</div>
+        <div class="book-author">${b.author}</div>
+        <div class="book-rating">${stars(b.r)}</div>
+        <div class="book-tags">${b.tags.map(t=>`<span class="book-tag ${t===b.p?'p':''}">#${t}</span>`).join('')}</div>
+        <div class="book-note">${b.note}</div>
+      </div>
+    </div>`).join('');
+}
+function filterBooks(tag,btn){document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderBooks(tag);}
+renderBooks('all');
+</script>
+</body>
+</html>
