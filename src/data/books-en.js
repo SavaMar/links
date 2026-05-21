@@ -1095,4 +1095,36 @@ export const books = [
       "The next Bill Gates won’t build an operating system. The next Larry Page won’t make a search engine.",
     ],
   },
+  {
+    id: 66,
+    title: "Everything is Negotiable",
+    author: "Gavin Kennedy",
+    cover: "https://filedn.com/lPmOLyYLDG0bQGSveFAL3WB/Books/en-66.jpg",
+    description:
+      "A classic guide to the art and science of negotiation. Gavin Kennedy lays out practical strategies and techniques to become a skilled negotiator, both in business and everyday life.",
+    hashtags: ["negotiation", "business", "communication", "strategy"],
+    "my-score": 5,
+    translation: ["en"],
+    quotes: [
+      "Every negotiation is unique, but the principles are universal.",
+      "If you don’t ask, you don’t get.",
+      "Negotiation is not about winning, it’s about finding agreement.",
+    ],
+  },
+  {
+    id: 67,
+    title: "Positioning: The Battle for Your Mind",
+    author: "Al Ries, Jack Trout",
+    cover: "https://filedn.com/lPmOLyYLDG0bQGSveFAL3WB/Books/en-67.jpg",
+    description:
+      "The groundbreaking marketing classic that introduced the concept of positioning. Learn how to cut through noise and embed your brand or idea deeply in the minds of your audience.",
+    hashtags: ["marketing", "branding", "business", "strategy"],
+    "my-score": 5,
+    translation: ["en"],
+    quotes: [
+      "Positioning is not what you do to a product. Positioning is what you do to the mind of the prospect.",
+      "In an over-communicated society, the only hope is to be selective, to concentrate on narrow targets.",
+      "The easiest way to get into a person's mind is to be first.",
+    ],
+  },
 ];

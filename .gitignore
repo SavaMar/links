@@ -9,3 +9,4 @@
 .env.production
 node_modules
 .vercel
+src/.DS_Store
